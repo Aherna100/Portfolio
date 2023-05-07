@@ -1,0 +1,22 @@
+{
+  "name": "portfolio",
+  "version": "0.1.0",
+  "private": true,
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "i18next": "^22.4.15",
+    "i18next-browser-languagedetector": "^7.0.1",
+    "next": "^13.3.4",
+    "react": "18.2.0",
+    "react-dom": "18.2.0",
+    "react-i18next": "^12.2.2",
+    "react-icons": "^4.8.0",
+    "react-placeholder-image": "^0.1.8",
+    "react-responsive-carousel": "^3.2.23"
+  }
+}

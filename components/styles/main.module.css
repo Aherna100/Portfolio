@@ -1,0 +1,260 @@
+/* Main */
+
+.container {
+    grid-row: 1/2;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    height: 65rem;
+}
+
+.containermain {
+    width: 40%;
+}
+
+.container p {
+    padding-top: .5rem;
+}
+
+.container h1 {
+    padding-top: .5rem;
+}
+
+.container h3 {
+    padding-top: .5rem;
+}
+
+/* Sidenav */
+
+.sidenav {
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    right: 0;
+    transition: .5s ease;
+    overflow-x: hidden;
+    padding-top: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* color-scheme: normal; */
+    color: var(--font-color);
+}
+
+/* About */
+
+.mainabout {
+    grid-row: 2/3;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.about {
+    display: flex;
+    flex-flow: column;
+    width: 60%;
+}
+
+.about p {
+    text-align: left;
+    padding-bottom: 1rem;
+    color: var(--secondary-color);
+}
+
+.about ul {
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    text-transform: capitalize;
+    gap: 0 3em;
+    list-style-type: none;
+}
+
+/* Projects */
+
+.mainproject {
+    grid-row: 3/4;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.project {
+    width: 5rem;
+    padding-right: 12rem;
+}
+
+.project1 {
+    width: 70rem;
+}
+
+/* Contact */
+
+.maincontact {
+    grid-row: 4/5;
+    grid-column: 2/3;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contact {
+    display: flex;
+    flex-flow: row;
+    align-items: center;
+}
+
+.contact p {
+    padding: 10rem;
+    width: 40rem;
+}
+
+.contact ul {
+    list-style-type: none;
+    cursor: pointer;
+}
+
+.contact ul h1 {
+    padding-top: .5rem;
+}
+
+/* Footer */
+
+.mainfooter {
+    grid-row: 5/6;
+    grid-column: 2;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+@media only screen and (min-width: 360px) and (max-width: 500px){
+    .container {
+        display: flex;
+        height: 50rem;
+        justify-content: center;
+    }
+
+    .containermain {
+        width: 20rem;
+    }
+
+    .mainabout {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .about {
+        display: flex;
+        flex-flow: column;
+        width: 18rem;
+    }
+
+    .mainproject {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+    }
+
+    .project {
+        padding-right: 0;
+        width: 5rem;
+    }
+
+    .project1 {
+        width: 22rem;
+    }
+
+    .maincontact {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: column-reverse;
+    }
+
+    .contact p {
+        padding: 5rem;
+        width: 29rem;
+    }
+
+    .contact li {
+        float: right;
+        padding: 1rem;
+    }
+
+    .contact ul {
+        margin-top: 5rem;
+    }
+
+  }
+
+  @media only screen and (min-width: 800px) and (max-width: 1280px){
+
+    .container {
+        display: flex;
+        height: 72rem;
+        justify-content: center;
+    }
+
+    .containermain {
+        width: 30rem;
+    }
+
+    .mainabout {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .about {
+        display: flex;
+        flex-flow: column;
+        width: 25rem;
+    }
+
+    .mainproject {
+        display: flex;
+        justify-content: space-evenly;
+        flex-flow: column;
+    }
+
+    .project1 {
+        width: 45rem;
+    }
+
+
+    .maincontact {
+        display: flex;
+        flex-flow: column-reverse;
+        justify-content: space-evenly;
+    }
+
+    .contact {
+        display: flex;
+        flex-flow: column-reverse;
+        height: 33rem;
+        justify-content: space-evenly;
+    }
+
+    .contact p {
+        padding: 5rem;
+        width: 29rem;
+    }
+
+    .contact li {
+        float: right;
+        padding: 1rem;
+    }
+
+    .contact ul {
+        margin-top: 5rem;
+    }
+
+  }
