@@ -1,15 +1,20 @@
 import { useState, useEffect } from 'react';
 
 export const useTheme = () => {
-    const [theme, setTheme] = useState('dark');
+    const [theme, setTheme] = useState('light');
 
     useEffect(() => {
-        document.documentElement.setAttribute("data-theme", theme)
+        const root = document.documentElement;
+        if (theme === 'dark') {
+            root.classList.add('dark');
+        } else {
+            root.classList.remove('dark');
+        }
     }, [theme]);
 
     const onToggleTheme = () => setTheme(theme === 'light' ? 'dark' : 'light');
 
     const isDarkTheme = (theme === 'dark');
 
-    return { isDarkTheme, onToggleTheme }
+    return { isDarkTheme, onToggleTheme, theme }
 }

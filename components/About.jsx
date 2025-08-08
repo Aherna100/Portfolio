@@ -11,12 +11,14 @@ export const About = () => {
                 <p>{t('about.part1')}</p>
                 <p>{t('about.part2')}</p>
                 <ul>
-                    <li>Javascript</li>
-                    <li>React</li>
-                    <li>Node.js</li>
-                    <li>Postgresql</li>
-                    <li>Swift</li>
-                    <li>Express</li>
+                    <li>{t('about.skills.backend')}</li>
+                    <li>{t('about.skills.frontend')}</li>
+                    <li>{t('about.skills.automation')}</li>
+                    <li>{t('about.skills.mobile')}</li>
+                    <li>{t('about.skills.database')}</li>
+                    <li>{t('about.skills.cloud')}</li>
+                    <li>{t('about.skills.leadership')}</li>
+                    <li>{t('about.skills.methodology')}</li>
                 </ul>
             </div>
             <div className={styles.about1}>

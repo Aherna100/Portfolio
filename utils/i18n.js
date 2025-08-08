@@ -7,33 +7,45 @@ i18n
     .use(initReactI18next)
     .init({
         lng: 'en',
-        debug: true,
+        debug: process.env.NODE_ENV === 'development',
         fallbackLng: 'en',
         resources: {
             en: {
                 translation: {
-                    // here we will place our translations...
                     main: {
                         part1: 'Hello, my name is',
-                        part2: `I'm a full stack developer.`,
-                        part3: `Software development technician with a techical degree in fullstack engineering, currently i'm focusing on improve my skills as a deveoper in react and swift.`,
+                        part2: `I'm a Full-Stack Engineer & Process Automation Specialist`,
+                        part3: `Experienced software developer with expertise in .NET development and Microsoft Power Platform automation. Currently pursuing full-stack engineering while leading teams and managing multiple projects in enterprise environments.`,
                     },
                     about: {
-                        part1: `My interest in web development started in 2012, creating flash animations, turns out i really like it, So i decided to start a career as software developer, my main focus is to learn and i'm looking forward to gain experience in personal projects or in a well known company.`,
-                        part2: `Here you will find a list of languages that i've been working with:`,
-                        part3: 'About Me'
+                        part1: `My journey in software development began in 2012 with web animations, evolving into a passion for full-stack engineering. I specialize in .NET development and process automation using Microsoft Power Platform, with proven experience in team leadership and project management. I thrive on learning new technologies and delivering scalable solutions for complex business requirements.`,
+                        part2: `Technologies and platforms I work with:`,
+                        part3: 'About Me',
+                        skills: {
+                            backend: '.NET Framework & Core',
+                            frontend: 'React & TypeScript',
+                            automation: 'Power Platform Suite',
+                            mobile: 'Swift & React Native',
+                            database: 'SQL Server & Azure',
+                            cloud: 'Azure',
+                            leadership: 'Team Management',
+                            methodology: 'Agile & Scrum'
+                        }
                     },
                     projects: {
-                        part1: `Some Things I've Built`
+                        part1: `Featured Projects & Automation Solutions`,
+                        part2: `Enterprise process automation and full-stack applications`
                     },
                     contact: {
-                        part1: 'Get in Touch',
-                        part2: `Currently i'm looking for new opportunities, you can send me an email, I'll reply at my earliest convenient.`,
-
+                        part1: 'Let\'s Connect',
+                        part2: `I'm open to discussing new opportunities in full-stack development, .NET projects, or process automation initiatives. Whether you're looking for technical leadership or hands-on development, let's talk about how I can contribute to your team.`,
                     },
-                    carousel: {
-                        part1: 'Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo.',
-                        part2: 'perspiciatis unde omnis iste natus',
+                    experience: {
+                        title: 'Professional Experience',
+                        automation: 'Process Automation Specialist',
+                        leadership: 'Team Leader & Project Manager',
+                        development: 'Full-Stack Developer',
+                        description: 'Leading cross-functional teams while delivering enterprise-grade automation solutions'
                     }
                 }
             },
@@ -41,20 +53,38 @@ i18n
                 translation: {
                     main: {
                         part1: 'Hola, mi nombre es',
-                        part2: 'Soy un desarrollador full stack',
-                        part3: 'Tecnologo en desarrollo de software con un grado tecnico en desarrollo full stack, actualmente me estoy enfocando en mejorar mis habilidades como desarrollador en react y swift.',
+                        part2: `Soy Ingeniero Full-Stack y Especialista en Automatización de Procesos`,
+                        part3: `Desarrollador de software experimentado en desarrollo .NET y automatización de procesos con Microsoft Power Platform. Actualmente cursando ingeniería full-stack mientras lidero equipos y gestiono múltiples proyectos en entornos empresariales.`,
                     },
                     about: {
-                        part1: `Mi interez en desarrollo web inicio en 2012, creando animaciones flash, resultando que me gusta bastante, asi que decidi iniciar la carrera de desaroollo de software, mi principal objetivo es aprender, ademas de buscar oportunidades para ganar experiencia ya sea con proyectos personales o en una compañia ya establecida.`,
-                        part2: `Acontinuacion encontraras una lista de lenguajes con los cuales he estado trabajando:`,
-                        part3: 'Acerca de Mi'
+                        part1: `Mi trayectoria en desarrollo de software comenzó en 2012 con animaciones web, evolucionando hacia una pasión por la ingeniería full-stack. Me especializo en desarrollo .NET y automatización de procesos usando Microsoft Power Platform, con experiencia comprobada en liderazgo de equipos y gestión de proyectos. Me motiva aprender nuevas tecnologías y entregar soluciones escalables para requerimientos empresariales complejos.`,
+                        part2: `Tecnologías y plataformas con las que trabajo:`,
+                        part3: 'Acerca de Mí',
+                        skills: {
+                            backend: '.NET Framework y Core',
+                            frontend: 'React y TypeScript',
+                            automation: 'Suite Power Platform',
+                            mobile: 'Swift y React Native',
+                            database: 'SQL Server y Azure',
+                            cloud: 'Azure',
+                            leadership: 'Gestión de Equipos',
+                            methodology: 'Agile y Scrum'
+                        }
                     },
                     projects: {
-                        part1: `Algunas Cosas Que He Construido`
+                        part1: `Proyectos Destacados y Soluciones de Automatización`,
+                        part2: `Automatización de procesos empresariales y aplicaciones full-stack`
                     },
                     contact: {
-                        part1: 'Ponte en contacto',
-                        part2: `Actualmente estoy buscando nuevas oportunidades, me puedes enviar un email, lo respondere tan pronto como sea posible.`,
+                        part1: 'Conectemos',
+                        part2: `Estoy abierto a discutir nuevas oportunidades en desarrollo full-stack, proyectos .NET, o iniciativas de automatización de procesos. Ya sea que busques liderazgo técnico o desarrollo práctico, hablemos sobre cómo puedo contribuir a tu equipo.`,
+                    },
+                    experience: {
+                        title: 'Experiencia Profesional',
+                        automation: 'Especialista en Automatización de Procesos',
+                        leadership: 'Líder de Equipo y Gerente de Proyectos',
+                        development: 'Desarrollador Full-Stack',
+                        description: 'Liderando equipos multifuncionales mientras entrego soluciones de automatización de nivel empresarial'
                     }
                 }
             }

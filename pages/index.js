@@ -1,8 +1,7 @@
 import Head from 'next/head'
-import Image from 'next/image'
 import styles from '@/styles/Home.module.css'
 
-import '../utils/i18n';
+import '@/utils/i18n';
 
 import { Main } from '@/components/Main';
 import { Sidenav } from '@/components/Sidenav';
@@ -36,12 +35,32 @@ export default function Home({ data }) {
 }
 
 export async function getStaticProps() {
-  const res = await fetch('https://api.github.com/users/aherna100/repos');
-  const fData = await res.json();
-  let data = fData.map((item) => ({ id: item.id, name: item.name, url: item.html_url, description: item.description }));
-  return {
-    props: {
-      data
+  try {
+    const res = await fetch('https://api.github.com/users/aherna100/repos');
+    
+    if (!res.ok) {
+      throw new Error(`GitHub API error: ${res.status}`);
+    }
+    
+    const fData = await res.json();
+    const data = fData.map((item) => ({ 
+      id: item.id, 
+      name: item.name, 
+      url: item.html_url, 
+      description: item.description 
+    }));
+    
+    return {
+      props: {
+        data
+      }
+    }
+  } catch (error) {
+    console.error('Error fetching GitHub repos:', error);
+    return {
+      props: {
+        data: []
+      }
     }
   }
 }
